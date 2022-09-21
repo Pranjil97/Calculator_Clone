@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham Rounded", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #000000;
+    height: 88.8vh;
+    background-image: linear-gradient(to right, rgb(75, 187, 231) 30%,rgb(79, 230, 79));
+}
+section{
+    width: 300px;
+    height: 440px;
+}
+.container{
+    max-width: 300px;
+    height: 400px;
+    margin: 10vh auto 0 auto;
+}
+.display{
+    width: 95%;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background-color: #053235;
+    color: white;
+}
+.btncolumn{
+    display: grid;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "btnac blank btndel btndiv "
+    "btn1 btn2 btn3 btnmul"
+    "btn4 btn5 btn6 btnplus"
+    "btn7 btn8 btn9 btnminus"
+    "btndot btnzero btnequal blank2"
+    ;
+}
+.button{
+    /* border: 0.5px solid grey; */
+    margin: 1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(144, 235, 235);
+    border: none;
+    cursor: pointer;
+}
+.btnequal{
+    margin: 1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(144, 235, 235);
+    border: none;
+    cursor: pointer;
+}
+.btndel{
+    margin: 1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(144, 235, 235);
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(183, 233, 240);
+    transition: 0.4s ease-in-out;
+}
+
+#btnac{
+    display: absolute;
+    grid-area: btnac;
+}
+#btndel{
+    grid-area: btndel;
+}
+#btndiv{
+    grid-area: btndiv;
+}
+#btn1{
+    grid-area: btn1;
+}
+#btn2{
+    grid-area: btn2;
+}
+#btn3{
+    grid-area: btn3;
+}
+#btnmul{
+    grid-area: btnmul;
+}
+#btn4{
+    grid-area: btn4;
+}
+#btn5{
+    grid-area: btn5;
+}
+#btn6{
+    grid-area: btn6;
+}
+#btnplus{
+    grid-area: btnplus;
+}
+#btn7{
+    grid-area: btn7;
+}
+#btn8{
+    grid-area: btn8;
+}
+#btn9{
+    grid-area: btn9;
+}
+#btnminus{
+    grid-area: btnminus;
+}
+#btndot{
+    grid-area: btndot;
+}
+#btnzero{
+    grid-area: btnzero;
+}
+#btnequal{
+    grid-area: btnequal;
+}
+.blank{
+    margin: 1px;
+    margin-left: -1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(144, 235, 235);
+    border: none;
+    cursor: pointer;
+}
