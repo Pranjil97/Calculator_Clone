@@ -24,7 +24,7 @@ const evaluate_calc = () => {
     if(display.innerText){
     const st= display.innerText
     const cal=eval(st)
-    const n=parseInt(cal)
+    const n=parseFloat(cal)
     display.innerText= n
     }else{
         display.innerText = ""

@@ -37,11 +37,11 @@ section{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
-    "btnac blank btndel btndiv "
+    "btnac btnac btndel btndiv "
     "btn1 btn2 btn3 btnmul"
     "btn4 btn5 btn6 btnplus"
     "btn7 btn8 btn9 btnminus"
-    "btndot btnzero btnequal blank2"
+    "btndot btnzero btnequal btnequal"
     ;
 }
 .button{
