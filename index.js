@@ -6,7 +6,7 @@ const ae=(e)=>{
 
 for(items of buttons){items.addEventListener("click",ae)}
 
-function all_clear(){display.innerText=""}
+const all_clear=()=>display.innerText=""
 
 const ac=document.getElementById("btnac")
 ac.addEventListener("click",all_clear)
